@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+}
+
+/* Main content section */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1rem;
+}
+
+.sidebar ul li a:hover {
+    color: #333;
+}
+
+/* Article styles */
+.article {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.article h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.article pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Courier New", Courier, monospace;
+    overflow-x: auto;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>Learn CSS Syntax</h1>
+            <p>Welcome to the CSS syntax guide!</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="main-content">
+            <div class="sidebar">
+                <h2>CSS Syntax</h2>
+                <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Selectors</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Values</a></li>
+                </ul>
+            </div>
+            <div class="article">
+                <h2>What is CSS Syntax?</h2>
+                <p>CSS stands for Cascading Style Sheets, and is used to style the layout of web pages. It consists of rules that define how HTML elements should be displayed on screen, paper, or in other media.</p>
+                <h3>Basic Syntax:</h3>
+                <pre>
+selector {
+    property: value;
+}
+                </pre>
+                <p>This is the basic syntax for writing CSS rules. A selector is an HTML element that you want to style, and the property and value define the style you want to apply.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Learn CSS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
