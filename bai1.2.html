@@ -1,159 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Syntax Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-    /* Basic reset for margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header styles */
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.header-container h1 {
-    font-size: 2.5rem;
-}
-
-.header-container p {
-    font-size: 1.2rem;
-}
-
-/* Main content section */
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-/* Sidebar styles */
-.sidebar {
-    width: 25%;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-}
-
-.sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style-type: none;
-}
-
-.sidebar ul li {
-    margin: 10px 0;
-}
-
-.sidebar ul li a {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1_2</title>
+    <link rel="stylesheet" href="index1_2.css" />
+    <style>
+      body {
+        margin: 100px 300px 100px 300px;
+      }
+      .prn {
+  a {
     text-decoration: none;
-    color: #4CAF50;
-    font-size: 1rem;
+    color: black;
+  }
+}
+#h2 {
+  max-width: 720px;
+  position: relative;
+  margin: auto;
+  text-decoration: none;
+}
+.next {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.next {
+  text-align: right;
 }
 
-.sidebar ul li a:hover {
-    color: #333;
-}
-
-/* Article styles */
-.article {
-    width: 70%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.article h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.article h3 {
-    font-size: 1.5rem;
-    margin-top: 15px;
-}
-
-.article pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: "Courier New", Courier, monospace;
-    overflow-x: auto;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
-</style>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <h1>Learn CSS Syntax</h1>
-            <p>Welcome to the CSS syntax guide!</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <section class="main-content">
-            <div class="sidebar">
-                <h2>CSS Syntax</h2>
-                <ul>
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">Selectors</a></li>
-                    <li><a href="#">Properties</a></li>
-                    <li><a href="#">Values</a></li>
-                </ul>
-            </div>
-            <div class="article">
-                <h2>What is CSS Syntax?</h2>
-                <p>CSS stands for Cascading Style Sheets, and is used to style the layout of web pages. It consists of rules that define how HTML elements should be displayed on screen, paper, or in other media.</p>
-                <h3>Basic Syntax:</h3>
-                <pre>
-selector {
-    property: value;
-}
-                </pre>
-                <p>This is the basic syntax for writing CSS rules. A selector is an HTML element that you want to style, and the property and value define the style you want to apply.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Learn CSS. All rights reserved.</p>
-    </footer>
-</body>
+    </style>
+  </head>
+  <body>
+    <h1>CSS Syntax</h1>
+    <div class="prn"><a  href="css_intro.asp">❮ Previous</a> </div>
+      <div class="next"><a  href="css_selectors.asp">Next ❯</a> </div>
+    <hr />
+    <p>A CSS rule consists of a selector and a declaration block.</p>
+    <hr />
+    <h2>CSS Syntax</h2>
+    <img
+      class="anh"
+      src="https://www.w3schools.com/css/img_selector.gif"
+      alt="anh1"
+    />
+    <p>The selector points to the HTML element you want to style.</p>
+    <p>
+      The declaration block contains one or more declarations separated by
+      semicolons.
+    </p>
+    <p>
+      Each declaration includes a CSS property name and a value, separated by a
+      colon.
+    </p>
+    <p>
+      Multiple CSS declarations are separated with semicolons, and declaration
+      blocks are surrounded by curly braces.
+    </p>
+    <div>
+      <h3>Example</h3>
+      <p>In this example all</p>
+      <p>elements will be center-aligned, with a red text color:</p>
+      <p class="bd">
+        p { <br />
+        color: red; <br />
+        text-align: center; <br />
+        }
+      </p>
+      <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1"
+        >Try it Yourself>></a
+      >
+    </div>
+    <h4>Example Explained</h4>
+    <ul>
+      <li>
+        p is a selector in CSS (it points to the HTML element you want to style:
+        <p>).</p>
+      </li>
+      <li>color is a property, and red is the property value</li>
+      <li>text-align is a property, and center is the property value</li>
+    </ul>
+    <div>
+      You will learn much more about CSS selectors and CSS properties in the
+      next chapters!
+    </div>
+    <hr />
+    <h2>Exercise?</h2>
+    <p>
+      In the following example, which part is the selector? <br />
+      p { color: red; }
+    </p>
+    <form
+      action="exercise.asp?x=xrcise_syntax1"
+      method="post"
+      target="_blank"
+      rel="opener"
+    >
+      <div class="quizoption">
+        <input
+          type="radio"
+          name="quizoption"
+          id="quizoption0"
+          value="0"
+        /><label for="quizoption0"><code>p</code></label>
+      </div>
+      <div class="quizoption">
+        <input
+          type="radio"
+          name="quizoption"
+          id="quizoption1"
+          value="1"
+        /><label for="quizoption1"><code>{ color: red; }</code></label>
+      </div>
+      <div class="quizoption">
+        <input
+          type="radio"
+          name="quizoption"
+          id="quizoption2"
+          value="2"
+        /><label for="quizoption2"><code>color</code></label>
+      </div>
+      <div class="quizoption">
+        <input
+          type="radio"
+          name="quizoption"
+          id="quizoption3"
+          value="3"
+        /><label for="quizoption3"><code>red</code></label>
+      </div>
+      <br /><button type="submit" class="ws-btn">Submit Answer »</button>
+    </form>
+    <hr />
+    <h2 id="h2">Video: CSS Syntax</h2>
+      <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/ZNskBxLVOfs?si=NvqeT6OuH8OK0Ax4" 
+      frameborder="0" 
+      allowfullscreen></iframe> <br>
+      <div class="prn"><a  href="css_intro.asp">❮ Previous</a> </div>
+      <div class="next"><a  href="css_selectors.asp">Next ❯</a> </div>
+      
+    </div>
+  </body>
 </html>
